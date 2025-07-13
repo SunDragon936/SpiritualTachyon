@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+
+  /* Custom cosmic colors */
+  --cosmic-50: hsl(211, 100%, 99%);
+  --cosmic-100: hsl(210, 40%, 92%);
+  --cosmic-200: hsl(214, 32%, 91%);
+  --cosmic-300: hsl(213, 27%, 84%);
+  --cosmic-400: hsl(215, 20%, 65%);
+  --cosmic-500: hsl(215, 16%, 47%);
+  --cosmic-600: hsl(215, 19%, 35%);
+  --cosmic-700: hsl(215, 25%, 27%);
+  --cosmic-800: hsl(217, 33%, 17%);
+  --cosmic-900: hsl(220, 39%, 11%);
+  --cosmic-950: hsl(224, 71%, 4%);
+
+  /* Mystical purple colors */
+  --mystical-50: hsl(270, 100%, 98%);
+  --mystical-100: hsl(269, 100%, 95%);
+  --mystical-200: hsl(269, 100%, 92%);
+  --mystical-300: hsl(269, 97%, 85%);
+  --mystical-400: hsl(270, 95%, 75%);
+  --mystical-500: hsl(270, 91%, 65%);
+  --mystical-600: hsl(271, 81%, 56%);
+  --mystical-700: hsl(272, 72%, 47%);
+  --mystical-800: hsl(273, 67%, 39%);
+  --mystical-900: hsl(274, 66%, 32%);
+
+  /* Gold colors */
+  --gold-400: hsl(45, 96%, 53%);
+  --gold-500: hsl(43, 96%, 56%);
+  --gold-600: hsl(37, 92%, 50%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(var(--cosmic-950));
+    color: hsl(var(--cosmic-50));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-cosmic-50 {
+    color: hsl(var(--cosmic-50));
+  }
+
+  .text-cosmic-100 {
+    color: hsl(var(--cosmic-100));
+  }
+
+  .text-cosmic-200 {
+    color: hsl(var(--cosmic-200));
+  }
+
+  .text-cosmic-300 {
+    color: hsl(var(--cosmic-300));
+  }
+
+  .text-cosmic-400 {
+    color: hsl(var(--cosmic-400));
+  }
+
+  .text-cosmic-500 {
+    color: hsl(var(--cosmic-500));
+  }
+
+  .text-cosmic-600 {
+    color: hsl(var(--cosmic-600));
+  }
+
+  .text-cosmic-700 {
+    color: hsl(var(--cosmic-700));
+  }
+
+  .text-cosmic-800 {
+    color: hsl(var(--cosmic-800));
+  }
+
+  .text-cosmic-900 {
+    color: hsl(var(--cosmic-900));
+  }
+
+  .text-cosmic-950 {
+    color: hsl(var(--cosmic-950));
+  }
+
+  .text-mystical-300 {
+    color: hsl(var(--mystical-300));
+  }
+
+  .text-mystical-400 {
+    color: hsl(var(--mystical-400));
+  }
+
+  .text-mystical-500 {
+    color: hsl(var(--mystical-500));
+  }
+
+  .text-mystical-600 {
+    color: hsl(var(--mystical-600));
+  }
+
+  .text-mystical-700 {
+    color: hsl(var(--mystical-700));
+  }
+
+  .text-mystical-800 {
+    color: hsl(var(--mystical-800));
+  }
+
+  .text-mystical-900 {
+    color: hsl(var(--mystical-900));
+  }
+
+  .text-gold-400 {
+    color: hsl(var(--gold-400));
+  }
+
+  .text-gold-500 {
+    color: hsl(var(--gold-500));
+  }
+
+  .text-gold-600 {
+    color: hsl(var(--gold-600));
+  }
+
+  .bg-cosmic-50 {
+    background-color: hsl(var(--cosmic-50));
+  }
+
+  .bg-cosmic-900 {
+    background-color: hsl(var(--cosmic-900));
+  }
+
+  .bg-cosmic-950 {
+    background-color: hsl(var(--cosmic-950));
+  }
+
+  .bg-mystical-500 {
+    background-color: hsl(var(--mystical-500));
+  }
+
+  .bg-mystical-600 {
+    background-color: hsl(var(--mystical-600));
+  }
+
+  .bg-mystical-700 {
+    background-color: hsl(var(--mystical-700));
+  }
+
+  .bg-mystical-800 {
+    background-color: hsl(var(--mystical-800));
+  }
+
+  .bg-gold-400 {
+    background-color: hsl(var(--gold-400));
+  }
+
+  .border-mystical-800 {
+    border-color: hsl(var(--mystical-800));
+  }
+
+  .border-gold-400 {
+    border-color: hsl(var(--gold-400));
+  }
+
+  .hover\:bg-gold-400:hover {
+    background-color: hsl(var(--gold-400));
+  }
+
+  .hover\:text-gold-400:hover {
+    color: hsl(var(--gold-400));
+  }
+
+  .hover\:text-cosmic-950:hover {
+    color: hsl(var(--cosmic-950));
+  }
+
+  .hover\:border-gold-400:hover {
+    border-color: hsl(var(--gold-400));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from { box-shadow: 0 0 20px hsl(var(--gold-400)); }
+    to { box-shadow: 0 0 30px hsl(var(--gold-400)), 0 0 40px hsl(var(--gold-400)); }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .gradient-text {
+    background: linear-gradient(45deg, hsl(var(--gold-400)), hsl(var(--mystical-400)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .backdrop-blur-cosmic {
+    backdrop-filter: blur(16px);
+    background-color: hsla(var(--cosmic-950), 0.9);
+  }
+
+  .from-mystical-600 {
+    --tw-gradient-from: hsl(var(--mystical-600));
+    --tw-gradient-to: hsl(var(--mystical-600) / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .to-mystical-700 {
+    --tw-gradient-to: hsl(var(--mystical-700));
+  }
+
+  .hover\:from-mystical-500:hover {
+    --tw-gradient-from: hsl(var(--mystical-500));
+    --tw-gradient-to: hsl(var(--mystical-500) / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .hover\:to-mystical-600:hover {
+    --tw-gradient-to: hsl(var(--mystical-600));
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cosmic-950));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--mystical-600));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--mystical-500));
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection */
+::selection {
+  background-color: hsl(var(--mystical-600));
+  color: hsl(var(--cosmic-50));
+}
