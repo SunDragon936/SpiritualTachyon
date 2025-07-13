@@ -37,7 +37,6 @@ const HeroSection = () => {
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-cosmic-950/20 via-mystical-900/40 to-cosmic-950/60"></div>
-      
       {/* Stars overlay */}
       <div className="absolute inset-0 opacity-30">
         {stars.map((star) => (
@@ -52,13 +51,12 @@ const HeroSection = () => {
           />
         ))}
       </div>
-      
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <p className="text-gold-400 text-sm sm:text-base font-medium tracking-widest uppercase mb-4 font-cinzel">
             ORGANIC QUANTUM HEALING SESSIONS
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold text-cosmic-50 mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold mb-6 leading-tight text-[#feffff]">
             Experience the Power of<br />
             <span className="text-gold-400 drop-shadow-lg">the Tachyon Chamber</span>
           </h1>
@@ -83,7 +81,6 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-      
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-6 h-6 text-gold-400" />
