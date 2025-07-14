@@ -63,7 +63,7 @@ const HeroSection = () => {
           
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-[32px] mb-[32px]">
           <Button
             size="lg"
             className="bg-gradient-to-r from-mystical-600 to-mystical-700 hover:from-mystical-500 hover:to-mystical-600 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
