@@ -17,19 +17,19 @@ const BenefitsSection = () => {
   const sessions = [
     {
       title: "Single Session",
-      description: "Experience the power of quantum healing in a focused 60-minute session.",
+      description: "Includes free tachyonized cintamani stone",
       price: "$111",
       icon: Zap
     },
     {
       title: "Package of 3",
-      description: "Deepen your transformation with a series of three healing sessions.",
+      description: "Includes free tachyonized cintamani stone",
       price: "$222",
       icon: CheckCircle
     },
     {
       title: "Package of 6",
-      description: "Complete transformation through six sessions over three months.",
+      description: "Includes free tachyonized cintamani stone",
       price: "$444",
       icon: Sparkles
     }
