@@ -1,6 +1,10 @@
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import merkabahAngelsPath from "@assets/Merkabah & Angels Large_1752461005341.jpg";
+import tachyonDiagramPath from "@assets/tachyon+d_1752461010567.jpg";
+import tachyonSwordPath from "@assets/Tachyon Sword_1752461017543.jpg";
+import tachyonPersonPath from "@assets/Tachyon Person_1752461021701.jpg";
 
 export default function TachyonInfo() {
   return (
@@ -20,7 +24,19 @@ export default function TachyonInfo() {
       <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-black mb-4">Tachyon Chamber Information</h1>
+            {/* Hero Image */}
+            <div className="mb-8 relative">
+              <img 
+                src={merkabahAngelsPath} 
+                alt="Merkabah Angels Sacred Geometry" 
+                className="w-full max-w-2xl mx-auto rounded-lg shadow-2xl opacity-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent rounded-lg"></div>
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-black mb-4">
+              Tachyon Chamber
+            </h1>
             <p className="text-xl text-gray-700 font-cinzel">
               Experience the Power of Quantum Healing
             </p>
@@ -34,9 +50,20 @@ export default function TachyonInfo() {
                 <span className="text-purple-600 mr-3">✧</span>
                 Introduction to Tachyons
               </h2>
-              <p className="text-black leading-relaxed mb-4">
-                Tachyons are subatomic particles that travel faster than the speed of light. They are particles that infuse physical matter with spiritual light, creating harmony at every level of being – the highest frequency particle that can be paired with matter. They are considered a direct connection to Source and the first particles created when the universe came into existence.
-              </p>
+              <div className="flex flex-col lg:flex-row gap-6 items-center mb-6">
+                <div className="lg:w-2/3">
+                  <p className="text-black leading-relaxed mb-4">
+                    Tachyons are subatomic particles that travel faster than the speed of light. They are particles that infuse physical matter with spiritual light, creating harmony at every level of being – the highest frequency particle that can be paired with matter. They are considered a direct connection to Source and the first particles created when the universe came into existence.
+                  </p>
+                </div>
+                <div className="lg:w-1/3">
+                  <img 
+                    src={tachyonDiagramPath} 
+                    alt="Tachyon Energy Properties Diagram" 
+                    className="w-full rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
             </section>
 
             {/* What Is a Tachyon Chamber */}
@@ -227,12 +254,23 @@ export default function TachyonInfo() {
                 <span className="text-purple-600 mr-3">✧</span>
                 Spiritual & Cosmic Context
               </h2>
-              <p className="text-black leading-relaxed mb-4">
-                Tachyon energy is used by the Pleiadians and other cosmic civilizations of Light as a source of healing, communication, and propulsion (e.g., hyperdrive energy). These beings are assisting humanity with its spiritual evolution, and a planetary network of Tachyon Chambers is now being constructed to support the shift.
-              </p>
-              <p className="text-black leading-relaxed">
-                The tachyon belt now surrounding Earth marks a transition between an entropic universe and a syntropic (ordered, harmonic) one. Tachyon Chambers help integrate this shift by anchoring high-frequency cosmic light into the body and biosphere.
-              </p>
+              <div className="flex flex-col lg:flex-row gap-6 items-center">
+                <div className="lg:w-2/3">
+                  <p className="text-black leading-relaxed mb-4">
+                    Tachyon energy is used by the Pleiadians and other cosmic civilizations of Light as a source of healing, communication, and propulsion (e.g., hyperdrive energy). These beings are assisting humanity with its spiritual evolution, and a planetary network of Tachyon Chambers is now being constructed to support the shift.
+                  </p>
+                  <p className="text-black leading-relaxed">
+                    The tachyon belt now surrounding Earth marks a transition between an entropic universe and a syntropic (ordered, harmonic) one. Tachyon Chambers help integrate this shift by anchoring high-frequency cosmic light into the body and biosphere.
+                  </p>
+                </div>
+                <div className="lg:w-1/3">
+                  <img 
+                    src={tachyonPersonPath} 
+                    alt="Tachyon Energy Human Aura" 
+                    className="w-full rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
             </section>
 
             {/* Why Tachyon Healing */}
@@ -247,24 +285,35 @@ export default function TachyonInfo() {
               <p className="text-black leading-relaxed mb-4">
                 Whether you're overwhelmed, unwell, or spiritually disconnected, this experience helps you:
               </p>
-              <ul className="text-black space-y-2 ml-6 mb-8">
-                <li className="flex items-start">
-                  <span className="text-purple-600 mr-2">•</span>
-                  Clear energetic blockages
-                </li>
-                <li className="flex items-start">
-                  <span className="text-purple-600 mr-2">•</span>
-                  Realign your entire system
-                </li>
-                <li className="flex items-start">
-                  <span className="text-purple-600 mr-2">•</span>
-                  Reconnect with your inner peace and purpose
-                </li>
-                <li className="flex items-start">
-                  <span className="text-purple-600 mr-2">•</span>
-                  Unlock your natural self-healing intelligence
-                </li>
-              </ul>
+              <div className="flex flex-col lg:flex-row gap-6 items-center mb-8">
+                <div className="lg:w-2/3">
+                  <ul className="text-black space-y-2 ml-6">
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-2">•</span>
+                      Clear energetic blockages
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-2">•</span>
+                      Realign your entire system
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-2">•</span>
+                      Reconnect with your inner peace and purpose
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-2">•</span>
+                      Unlock your natural self-healing intelligence
+                    </li>
+                  </ul>
+                </div>
+                <div className="lg:w-1/3">
+                  <img 
+                    src={tachyonSwordPath} 
+                    alt="Tachyon Sword Sacred Geometry" 
+                    className="w-full rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
               
               {/* Call to Action */}
               <div className="text-center">
