@@ -47,7 +47,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-cosmic-200 hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-gold-400 hover:text-gold-500 px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>
@@ -76,7 +76,7 @@ const Navigation = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-cosmic-200 hover:text-gold-400 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                className="text-gold-400 hover:text-gold-500 block px-3 py-2 text-base font-medium transition-colors duration-300"
               >
                 {item.name}
               </a>
