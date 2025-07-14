@@ -11,10 +11,10 @@ export default function TachyonInfo() {
   return (
     <div className="min-h-screen relative overflow-hidden" style={{
       background: `
-        url(${crystalsPath}) center/300px 300px repeat,
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.6) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.5) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.4) 0%, transparent 50%),
+        url(${crystalsPath}) center/cover no-repeat,
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
         conic-gradient(from 0deg at 50% 50%, #0f0f23 0deg, #1a1a2e 60deg, #16213e 120deg, #0f0f23 180deg, #1a1a2e 240deg, #16213e 300deg, #0f0f23 360deg)
       `
     }}>
