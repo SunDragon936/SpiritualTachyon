@@ -343,8 +343,8 @@ export default function TachyonInfo() {
               <p className="text-white leading-relaxed mb-4">
                 Whether you're overwhelmed, unwell, or spiritually disconnected, this experience helps you:
               </p>
-              <div className="flex flex-col lg:flex-row gap-6 items-center mb-8">
-                <div className="lg:w-2/3">
+              <div className="flex flex-col md:flex-row gap-6 items-start mb-8">
+                <div className="md:w-2/3 order-2 md:order-1">
                   <ul className="text-white space-y-2 ml-6">
                     <li className="flex items-start">
                       <span className="text-gold-400 mr-2">•</span>
@@ -364,7 +364,7 @@ export default function TachyonInfo() {
                     </li>
                   </ul>
                 </div>
-                <div className="lg:w-1/3">
+                <div className="md:w-1/3 order-1 md:order-2">
                   <img 
                     src={tachyonSwordPath} 
                     alt="Tachyon Sword Sacred Geometry" 
