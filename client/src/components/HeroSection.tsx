@@ -53,7 +53,7 @@ const HeroSection = () => {
       </div>
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <p className="text-gold-400 text-sm sm:text-base font-medium tracking-widest uppercase mb-4 font-cinzel">
+          <p className="text-sm sm:text-base font-medium tracking-widest uppercase mb-4 font-cinzel text-[#feffff]">
             ORGANIC QUANTUM HEALING SESSIONS
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold mb-6 leading-tight text-[#feffff]">
