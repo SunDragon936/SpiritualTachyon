@@ -60,9 +60,7 @@ const HeroSection = () => {
             Experience the Power of<br />
             <span className="text-gold-400 drop-shadow-lg">the Tachyon Chamber</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-cosmic-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Discover profound healing and transformation through advanced quantum energy technology in a sacred space designed for your spiritual evolution.
-          </p>
+          
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
