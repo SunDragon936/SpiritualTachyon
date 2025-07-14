@@ -16,8 +16,8 @@ const Footer = () => {
       style={{
         backgroundImage: `url(${quantumNodesBgPath})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'top',
-        backgroundAttachment: 'fixed',
+        backgroundPosition: '50% 0%',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       {/* Overlay for text readability */}
