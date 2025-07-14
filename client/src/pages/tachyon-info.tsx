@@ -337,14 +337,14 @@ export default function TachyonInfo() {
                 <span className="text-gold-400 mr-3">✧</span>
                 Why Tachyon Healing?
               </h2>
-              <p className="text-white leading-relaxed mb-4">
-                Modern life is full of pressures and imbalances. The Tachyon Chamber offers a resonant recalibration—an opportunity to return to your natural state of well-being.
-              </p>
-              <p className="text-white leading-relaxed mb-4">
-                Whether you're overwhelmed, unwell, or spiritually disconnected, this experience helps you:
-              </p>
               <div className="flex flex-col md:flex-row gap-6 items-start mb-8">
                 <div className="md:w-2/3 order-2 md:order-1">
+                  <p className="text-white leading-relaxed mb-4">
+                    Modern life is full of pressures and imbalances. The Tachyon Chamber offers a resonant recalibration—an opportunity to return to your natural state of well-being.
+                  </p>
+                  <p className="text-white leading-relaxed mb-4">
+                    Whether you're overwhelmed, unwell, or spiritually disconnected, this experience helps you:
+                  </p>
                   <ul className="text-white space-y-2 ml-6">
                     <li className="flex items-start">
                       <span className="text-gold-400 mr-2">•</span>
