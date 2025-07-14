@@ -94,7 +94,7 @@ export default function TachyonInfo() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-white mb-4 drop-shadow-lg">
               Tachyon Chamber
             </h1>
-            <p className="text-xl text-gold-400 font-cinzel drop-shadow-md">
+            <p className="text-xl font-cinzel drop-shadow-md text-[#ffffff]">
               Experience the Power of Quantum Healing
             </p>
           </div>
