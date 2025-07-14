@@ -35,7 +35,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-cinzel font-bold text-gold-400 italic tracking-wider">
+            <h1 className="text-xl font-cinzel font-bold italic tracking-wider text-[#facc15]">
               STARGATE HEALING
             </h1>
           </div>
@@ -66,7 +66,6 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden backdrop-blur-cosmic border-t border-mystical-800/30">
