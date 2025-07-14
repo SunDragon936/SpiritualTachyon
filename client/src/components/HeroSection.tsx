@@ -71,9 +71,8 @@ const HeroSection = () => {
             Book Your Session
           </Button>
           <Button
-            variant="outline"
             size="lg"
-            className="border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-cosmic-950 px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105"
+            className="bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Learn More
           </Button>
