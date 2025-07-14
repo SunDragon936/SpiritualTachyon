@@ -368,7 +368,7 @@ export default function TachyonInfo() {
                   <img 
                     src={tachyonSwordPath} 
                     alt="Tachyon Sword Sacred Geometry" 
-                    className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+                    className="w-full h-auto rounded-lg shadow-2xl"
                   />
                 </div>
               </div>
