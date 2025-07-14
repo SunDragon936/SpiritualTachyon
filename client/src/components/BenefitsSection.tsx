@@ -24,13 +24,13 @@ const BenefitsSection = () => {
     {
       title: "Package of 3",
       description: "Deepen your transformation with a series of three healing sessions.",
-      price: "$400",
+      price: "$222",
       icon: CheckCircle
     },
     {
-      title: "Intensive Program",
+      title: "Package of 6",
       description: "Complete transformation through six sessions over three months.",
-      price: "$750",
+      price: "$444",
       icon: Sparkles
     }
   ];
