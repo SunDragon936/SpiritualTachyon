@@ -81,6 +81,14 @@ export default function TachyonInfo() {
       <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative z-40">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
+            {/* Title and Subtitle */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-white mb-4 drop-shadow-lg">
+              Tachyon Chamber
+            </h1>
+            <p className="text-xl text-gold-400 font-cinzel drop-shadow-md mb-8">
+              Experience the Power of Quantum Healing
+            </p>
+            
             {/* Hero Image */}
             <div className="mb-8 relative">
               <img 
@@ -90,11 +98,6 @@ export default function TachyonInfo() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent rounded-lg"></div>
             </div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-white mb-4 drop-shadow-lg">Tachyon Chamber Information</h1>
-            <p className="text-xl font-cinzel drop-shadow-md text-[#ffffff]">
-              Experience the Power of Quantum Healing
-            </p>
           </div>
 
           {/* Content Sections */}
