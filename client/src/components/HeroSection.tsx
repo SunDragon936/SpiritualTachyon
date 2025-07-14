@@ -27,7 +27,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center"
+      className="min-h-screen relative flex items-end justify-center pb-32"
       style={{
         backgroundImage: `url(${homeBgPath})`,
         backgroundSize: 'cover',
