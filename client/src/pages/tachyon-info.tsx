@@ -1,30 +1,61 @@
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useEffect, useState } from "react";
 import merkabahAngelsPath from "@assets/Merkabah & Angels Large_1752461005341.jpg";
 import tachyonDiagramPath from "@assets/tachyon+d_1752461010567.jpg";
 import tachyonSwordPath from "@assets/Tachyon Sword_1752461017543.jpg";
 import tachyonPersonPath from "@assets/Tachyon Person_1752461021701.jpg";
+import crystalsPath from "@assets/crystals_1752463023733.jpg";
 
 export default function TachyonInfo() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{
-      background: `
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.15) 0%, transparent 50%),
-        conic-gradient(from 0deg at 50% 50%, #0f0f23 0deg, #1a1a2e 60deg, #16213e 120deg, #0f0f23 180deg, #1a1a2e 240deg, #16213e 300deg, #0f0f23 360deg)
-      `
-    }}>
-      {/* Crystalline overlay effects */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-br from-pink-400/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 rounded-full blur-2xl animate-pulse delay-2000"></div>
-      </div>
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Parallax Background with Crystals */}
+      <div 
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: `url(${crystalsPath})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          transform: `translateY(${scrollY * 0.5}px)`,
+          filter: 'brightness(0.7) contrast(1.1)'
+        }}
+      />
+      
+      {/* Galactic Crystalline Overlay */}
+      <div 
+        className="fixed inset-0 z-10"
+        style={{
+          background: `
+            radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.4) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%),
+            linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%)
+          `,
+          transform: `translateY(${scrollY * 0.3}px)`
+        }}
+      />
       
       {/* Geometric crystal patterns */}
-      <div className="absolute inset-0 opacity-10">
+      <div 
+        className="fixed inset-0 z-20 opacity-15"
+        style={{
+          transform: `translateY(${scrollY * 0.2}px)`
+        }}
+      >
         <svg width="100%" height="100%" viewBox="0 0 400 400" className="absolute inset-0">
           <defs>
             <pattern id="crystal-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -32,18 +63,23 @@ export default function TachyonInfo() {
               <polygon points="30,30 70,30 70,70 30,70" fill="none" stroke="url(#crystal-gradient)" strokeWidth="0.5"/>
             </pattern>
             <linearGradient id="crystal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#8B5CF6" stopOpacity="0.5"/>
-              <stop offset="50%" stopColor="#06B6D4" stopOpacity="0.3"/>
-              <stop offset="100%" stopColor="#EC4899" stopOpacity="0.4"/>
+              <stop offset="0%" stopColor="#8B5CF6" stopOpacity="0.6"/>
+              <stop offset="50%" stopColor="#06B6D4" stopOpacity="0.4"/>
+              <stop offset="100%" stopColor="#EC4899" stopOpacity="0.5"/>
             </linearGradient>
           </defs>
           <rect width="100%" height="100%" fill="url(#crystal-pattern)"/>
         </svg>
       </div>
       
-      {/* Floating particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+      {/* Floating particles with parallax */}
+      <div 
+        className="fixed inset-0 z-30 overflow-hidden"
+        style={{
+          transform: `translateY(${scrollY * 0.1}px)`
+        }}
+      >
+        {[...Array(30)].map((_, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-white rounded-full animate-ping"
@@ -51,17 +87,18 @@ export default function TachyonInfo() {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
+              animationDuration: `${2 + Math.random() * 2}s`,
+              opacity: 0.8
             }}
           />
         ))}
       </div>
       
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-cosmic-950/80 backdrop-blur-sm border-b border-purple-500/20 shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-purple-500/30 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link href="/">
-            <Button variant="ghost" className="text-gold-400 hover:text-gold-300 hover:bg-cosmic-800/20">
+            <Button variant="ghost" className="text-gold-400 hover:text-gold-300 hover:bg-white/10 transition-all duration-300">
               <ChevronLeft className="w-5 h-5 mr-2" />
               Back to Home
             </Button>
@@ -70,7 +107,7 @@ export default function TachyonInfo() {
       </nav>
 
       {/* Main Content */}
-      <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative z-40">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             {/* Hero Image */}
@@ -94,7 +131,7 @@ export default function TachyonInfo() {
           {/* Content Sections */}
           <div className="space-y-12">
             {/* Introduction to Tachyons */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 Introduction to Tachyons
@@ -116,7 +153,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* What Is a Tachyon Chamber */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 What Is a Tachyon Chamber?
@@ -136,7 +173,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* How Tachyons Work */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 How Tachyons Work
@@ -168,7 +205,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* Benefits of Tachyon Exposure */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 Benefits of Tachyon Exposure
@@ -256,7 +293,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* What to Expect in a Session */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 What to Expect in a Session
@@ -282,7 +319,7 @@ export default function TachyonInfo() {
               <p className="text-white leading-relaxed mb-6">
                 The Tachyon Chamber interacts with your unique energy matrix, where you are at in the exact now moment of your session, what is priority for you, and what you are willing and able to receive. Your awareness level of what you are receiving will depend on the brain wave state that you are able to get yourself to during your session.
               </p>
-              <div className="bg-cosmic-800/20 rounded-lg p-6 border border-purple-400/20">
+              <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
                 <h3 className="text-lg font-cinzel font-bold text-gold-400 mb-4">Initial Recommendations:</h3>
                 <ul className="text-white space-y-2">
                   <li className="flex items-start">
@@ -298,7 +335,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* Spiritual & Cosmic Context */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 Spiritual & Cosmic Context
@@ -323,7 +360,7 @@ export default function TachyonInfo() {
             </section>
 
             {/* Why Tachyon Healing */}
-            <section className="bg-cosmic-900/20 backdrop-blur-md rounded-lg p-8 border border-purple-500/20 shadow-2xl">
+            <section className="bg-black/30 backdrop-blur-md rounded-lg p-8 border border-purple-400/30 shadow-2xl">
               <h2 className="text-2xl font-cinzel font-bold text-white mb-6 flex items-center">
                 <span className="text-gold-400 mr-3">✧</span>
                 Why Tachyon Healing?
