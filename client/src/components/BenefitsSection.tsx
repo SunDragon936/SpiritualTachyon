@@ -29,7 +29,7 @@ const BenefitsSection = () => {
     },
     {
       title: "Package of 6",
-      description: "Complete transformation through six sessions over three months.",
+      description: "Includes a free cintamani stone.",
       price: "$444",
       icon: Sparkles
     }
