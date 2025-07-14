@@ -16,14 +16,11 @@ export default function TachyonInfo() {
           </Link>
         </div>
       </nav>
-
       {/* Main Content */}
       <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-black mb-4">
-              Tachyon Chamber
-            </h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-cinzel font-bold text-black mb-4">Tachyon Chamber Information</h1>
             <p className="text-xl text-gray-700 font-cinzel">
               Experience the Power of Quantum Healing
             </p>
