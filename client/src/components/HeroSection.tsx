@@ -67,8 +67,11 @@ const HeroSection = () => {
           <Button
             size="lg"
             className="bg-gradient-to-r from-mystical-600 to-mystical-700 hover:from-mystical-500 hover:to-mystical-600 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            asChild
           >
-            Book Your Session
+            <a href="https://calendly.com/stargatehealing" target="_blank" rel="noopener noreferrer">
+              Book Your Session
+            </a>
           </Button>
           <Button
             size="lg"
