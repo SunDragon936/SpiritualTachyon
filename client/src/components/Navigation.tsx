@@ -47,7 +47,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gold-400 hover:text-gold-500 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-yellow-400 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>
@@ -59,7 +59,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-cosmic-200 hover:text-gold-400 focus:outline-none focus:text-gold-400 transition-colors duration-300"
+              className="text-yellow-400 hover:text-yellow-300 focus:outline-none focus:text-yellow-300 transition-colors duration-300"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -76,7 +76,7 @@ const Navigation = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-gold-400 hover:text-gold-500 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                className="text-yellow-400 hover:text-yellow-300 block px-3 py-2 text-base font-medium transition-colors duration-300"
               >
                 {item.name}
               </a>
