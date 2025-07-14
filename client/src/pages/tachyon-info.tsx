@@ -258,7 +258,7 @@ export default function TachyonInfo() {
               <p className="text-white leading-relaxed mb-4">
                 Many clients also describe feeling deep peace, inner balance, and spiritual clarity after a session—leading some to call tachyons the "happiness particles."
               </p>
-              <p className="text-gold-400 font-medium italic">
+              <p className="font-medium italic text-[#fefeff]">
                 It is most important to try this technology with an open mind and let tachyons speak for themselves
               </p>
             </section>
