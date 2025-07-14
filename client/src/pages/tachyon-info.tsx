@@ -5,22 +5,17 @@ import merkabahAngelsPath from "@assets/Merkabah & Angels Large_1752461005341.jp
 import tachyonDiagramPath from "@assets/tachyon+d_1752461010567.jpg";
 import tachyonSwordPath from "@assets/Tachyon Sword_1752461017543.jpg";
 import tachyonPersonPath from "@assets/Tachyon Person_1752461021701.jpg";
-import crystalsPath from "@assets/crystals_1752462446083.jpg";
 
 export default function TachyonInfo() {
   return (
     <div className="min-h-screen relative overflow-hidden" style={{
       background: `
-        url(${crystalsPath}) center/cover no-repeat,
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.4) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.15) 0%, transparent 50%),
         conic-gradient(from 0deg at 50% 50%, #0f0f23 0deg, #1a1a2e 60deg, #16213e 120deg, #0f0f23 180deg, #1a1a2e 240deg, #16213e 300deg, #0f0f23 360deg)
       `
     }}>
-      {/* Dark overlay for content readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
       {/* Crystalline overlay effects */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
