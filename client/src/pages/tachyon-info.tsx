@@ -21,7 +21,6 @@ export default function TachyonInfo() {
           filter: 'brightness(0.7) contrast(1.1)'
         }}
       />
-      
       {/* Fixed Galactic Crystalline Overlay */}
       <div 
         className="fixed inset-0 z-10"
@@ -34,7 +33,6 @@ export default function TachyonInfo() {
           `
         }}
       />
-      
       {/* Fixed Geometric crystal patterns */}
       <div className="fixed inset-0 z-20 opacity-15">
         <svg width="100%" height="100%" viewBox="0 0 400 400" className="absolute inset-0">
@@ -52,7 +50,6 @@ export default function TachyonInfo() {
           <rect width="100%" height="100%" fill="url(#crystal-pattern)"/>
         </svg>
       </div>
-      
       {/* Fixed Floating particles */}
       <div className="fixed inset-0 z-30 overflow-hidden">
         {[...Array(30)].map((_, i) => (
@@ -69,7 +66,6 @@ export default function TachyonInfo() {
           />
         ))}
       </div>
-      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-purple-500/30 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -81,7 +77,6 @@ export default function TachyonInfo() {
           </Link>
         </div>
       </nav>
-
       {/* Main Content */}
       <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative z-40">
         <div className="max-w-4xl mx-auto">
@@ -296,7 +291,7 @@ export default function TachyonInfo() {
                 The Tachyon Chamber interacts with your unique energy matrix, where you are at in the exact now moment of your session, what is priority for you, and what you are willing and able to receive. Your awareness level of what you are receiving will depend on the brain wave state that you are able to get yourself to during your session.
               </p>
               <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
-                <h3 className="text-lg font-cinzel font-bold text-gold-400 mb-4">Initial Recommendations:</h3>
+                <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Initial Recommendations:</h3>
                 <ul className="text-white space-y-2">
                   <li className="flex items-start">
                     <span className="text-gold-400 mr-2">•</span>
