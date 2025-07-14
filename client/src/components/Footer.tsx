@@ -1,3 +1,5 @@
+import quantumNodesBgPath from "@assets/Quantum Nodes_1752458083605.jpg";
+
 const Footer = () => {
   const navItems = [
     { name: "Home", href: "#home" },
@@ -9,8 +11,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-cosmic-950 border-t border-mystical-800/30 py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer 
+      className="relative border-t border-mystical-800/30 py-12"
+      style={{
+        backgroundImage: `url(${quantumNodesBgPath})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-cosmic-950/80"></div>
+      
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-cinzel font-bold text-gold-400 mb-4">
             STARGATE HEALING
