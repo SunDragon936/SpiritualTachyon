@@ -1,7 +1,6 @@
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { useEffect, useState } from "react";
 import merkabahAngelsPath from "@assets/Merkabah & Angels Large_1752461005341.jpg";
 import tachyonDiagramPath from "@assets/tachyon+d_1752461010567.jpg";
 import tachyonSwordPath from "@assets/Tachyon Sword_1752461017543.jpg";
@@ -9,20 +8,9 @@ import tachyonPersonPath from "@assets/Tachyon Person_1752461021701.jpg";
 import crystalsPath from "@assets/crystals_1752463023733.jpg";
 
 export default function TachyonInfo() {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Parallax Background with Crystals */}
+    <div className="min-h-screen relative">
+      {/* Fixed Background with Crystals */}
       <div 
         className="fixed inset-0 z-0"
         style={{
@@ -30,12 +18,11 @@ export default function TachyonInfo() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          transform: `translateY(${scrollY * 0.5}px)`,
           filter: 'brightness(0.7) contrast(1.1)'
         }}
       />
       
-      {/* Galactic Crystalline Overlay */}
+      {/* Fixed Galactic Crystalline Overlay */}
       <div 
         className="fixed inset-0 z-10"
         style={{
@@ -44,18 +31,12 @@ export default function TachyonInfo() {
             radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
             radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%),
             linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%)
-          `,
-          transform: `translateY(${scrollY * 0.3}px)`
+          `
         }}
       />
       
-      {/* Geometric crystal patterns */}
-      <div 
-        className="fixed inset-0 z-20 opacity-15"
-        style={{
-          transform: `translateY(${scrollY * 0.2}px)`
-        }}
-      >
+      {/* Fixed Geometric crystal patterns */}
+      <div className="fixed inset-0 z-20 opacity-15">
         <svg width="100%" height="100%" viewBox="0 0 400 400" className="absolute inset-0">
           <defs>
             <pattern id="crystal-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -72,13 +53,8 @@ export default function TachyonInfo() {
         </svg>
       </div>
       
-      {/* Floating particles with parallax */}
-      <div 
-        className="fixed inset-0 z-30 overflow-hidden"
-        style={{
-          transform: `translateY(${scrollY * 0.1}px)`
-        }}
-      >
+      {/* Fixed Floating particles */}
+      <div className="fixed inset-0 z-30 overflow-hidden">
         {[...Array(30)].map((_, i) => (
           <div
             key={i}
