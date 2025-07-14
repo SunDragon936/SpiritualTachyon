@@ -18,7 +18,7 @@ const BenefitsSection = () => {
     {
       title: "Single Session",
       description: "Experience the power of quantum healing in a focused 60-minute session.",
-      price: "$150",
+      price: "$111",
       icon: Zap
     },
     {
