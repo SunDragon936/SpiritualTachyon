@@ -98,4 +98,10 @@ The application follows a full-stack architecture with clear separation between 
 - **Type Safety**: Full TypeScript coverage across frontend and backend
 - **Error Handling**: Comprehensive error boundaries and API error handling
 
+## Recent Changes
+- **Tachyon Info Page**: Created comprehensive information page with detailed content about tachyon healing
+- **Navigation**: Added routing for `/tachyon-info` page with proper navigation
+- **Hero Section**: Linked "Learn More" button to new Tachyon Info page
+- **Calendly Integration**: Embedded booking link in "Book Your Session" button
+
 The application is designed to be easily extensible, with clear separation of concerns and modern development practices. The cosmic/mystical theme is consistently applied throughout the UI with custom color schemes and typography choices.

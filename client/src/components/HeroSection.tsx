@@ -76,8 +76,11 @@ const HeroSection = () => {
           <Button
             size="lg"
             className="bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            asChild
           >
-            Learn More
+            <a href="/tachyon-info">
+              Learn More
+            </a>
           </Button>
         </div>
       </div>
