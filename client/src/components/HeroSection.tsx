@@ -56,9 +56,9 @@ const HeroSection = () => {
           <p className="text-sm sm:text-base font-medium tracking-widest uppercase mb-4 font-cinzel text-[#feffff]">
             ORGANIC QUANTUM HEALING SESSIONS
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold mb-6 leading-tight text-[#feffff]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-[#feffff] animate-pulse-slow transform hover:scale-105 transition-all duration-300" style={{ fontFamily: 'Georgia, serif', textShadow: '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4)' }}>
             Experience the Power of<br />
-            <span className="text-gold-400 drop-shadow-lg">the Tachyon Chamber</span>
+            <span className="text-yellow-400 animate-glow" style={{ textShadow: '0 0 20px rgba(255, 235, 59, 0.8), 0 0 40px rgba(255, 235, 59, 0.6), 0 0 60px rgba(255, 235, 59, 0.4)' }}>the Tachyon Chamber</span>
           </h1>
           
         </div>
