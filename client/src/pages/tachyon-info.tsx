@@ -122,7 +122,7 @@ export default function TachyonInfo() {
             <section className="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-gray-200 shadow-lg">
               <h2 className="text-2xl font-cinzel font-bold text-gray-800 mb-6 flex items-center">
                 <span className="text-purple-600 mr-3">✧</span>
-                Benefits of Tachyon Energy
+                Benefits of Tachyon Exposure
               </h2>
               <p className="text-black leading-relaxed mb-4">
                 Tachyons harmonize imbalanced energy, rejuvenate the body's energy matrix, and assist in balancing:
