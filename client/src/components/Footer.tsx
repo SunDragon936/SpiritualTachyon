@@ -11,17 +11,20 @@ const Footer = () => {
   ];
 
   return (
-    <footer 
-      className="relative border-t border-mystical-800/30 py-12"
-      style={{
-        backgroundImage: `url(${quantumNodesBgPath})`,
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 0%',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-cosmic-950/80"></div>
+    <footer className="relative border-t border-mystical-800/30 py-12">
+      {/* Fixed Parallax Background */}
+      <div 
+        className="fixed inset-0 -z-10"
+        style={{
+          backgroundImage: `url(${quantumNodesBgPath})`,
+          backgroundSize: 'cover',
+          backgroundPosition: '50% 0%',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      />
+      {/* Fixed Overlay for text readability */}
+      <div className="fixed inset-0 bg-cosmic-950/80 -z-10"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
