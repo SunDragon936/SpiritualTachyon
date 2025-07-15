@@ -48,7 +48,7 @@ const BenefitsSection = () => {
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-cosmic-950/60 via-mystical-900/50 to-cosmic-950/70"></div>
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-[#ffffff]">
         <div className="text-center mb-16">
           <p className="text-gold-400 text-sm font-medium tracking-widest uppercase mb-4 font-cinzel">
             BENEFITS OF THE TACHYON CHAMBER
