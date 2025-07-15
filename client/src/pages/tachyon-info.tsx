@@ -180,79 +180,92 @@ export default function TachyonInfo() {
                 <span className="text-gold-400 mr-3">✧</span>
                 Benefits of Tachyon Exposure
               </h2>
-              <p className="text-white leading-relaxed mb-4">
+              <p className="text-white leading-relaxed mb-6">
                 Tachyons harmonize imbalanced energy, rejuvenate the body's energy matrix, and assist in balancing:
               </p>
-              <ul className="text-white space-y-2 ml-6 mb-6">
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  Physical health and vitality
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  Emotional clarity and peace
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  Mental focus and resilience
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  Spiritual growth and alignment
-                </li>
-              </ul>
-              <p className="text-white leading-relaxed mb-4">
+              
+              <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20 mb-6">
+                <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Core Balance Areas:</h3>
+                <ul className="text-white space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-gold-400 mr-2">•</span>
+                    Physical health and vitality
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold-400 mr-2">•</span>
+                    Emotional clarity and peace
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold-400 mr-2">•</span>
+                    Mental focus and resilience
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold-400 mr-2">•</span>
+                    Spiritual growth and alignment
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-white leading-relaxed mb-6">
                 Some reported benefits include:
               </p>
+              
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <ul className="text-white space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Faster healing after surgery or injury
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Relief from chronic pain, arthritis, and inflammation
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Reduction in allergies, sensitivities, and eczema
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Improved immune response
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    More restorative sleep
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Nervous system regulation and blood pressure balance
-                  </li>
-                </ul>
-                <ul className="text-white space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Emotional healing: trauma, fear, depression, anxiety
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Increased energy, motivation, and mental clarity
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Deeper awareness and improved decision-making
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Release of outdated beliefs and emotional patterns
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gold-400 mr-2">•</span>
-                    Enhanced connection to the higher self
-                  </li>
-                </ul>
+                <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
+                  <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Physical Benefits:</h3>
+                  <ul className="text-white space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Faster healing after surgery or injury
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Relief from chronic pain, arthritis, and inflammation
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Reduction in allergies, sensitivities, and eczema
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Improved immune response
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      More restorative sleep
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Nervous system regulation and blood pressure balance
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
+                  <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Mental & Emotional Benefits:</h3>
+                  <ul className="text-white space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Emotional healing: trauma, fear, depression, anxiety
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Increased energy, motivation, and mental clarity
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Deeper awareness and improved decision-making
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Release of outdated beliefs and emotional patterns
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Enhanced connection to the higher self
+                    </li>
+                  </ul>
+                </div>
               </div>
               <p className="text-white leading-relaxed mb-4">
                 Many clients also describe feeling deep peace, inner balance, and spiritual clarity after a session—leading some to call tachyons the "happiness particles."
