@@ -97,28 +97,40 @@ const BenefitsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sessions.map((session, index) => {
               const Icon = session.icon;
+              const calendlyLinks = [
+                "https://calendly.com/stargatehealing/1-hour-appointment?back=1&month=2025-07",
+                "https://calendly.com/stargatehealing/30-min-tachyon-session-1-hour-total-appointme-clone-2?back=1&month=2025-07",
+                "https://calendly.com/stargatehealing/package-of-3-30-minute-sessions-74-each-clone-1?back=1&month=2025-07"
+              ];
               return (
-                <Card
+                <a
                   key={index}
-                  className="bg-cosmic-900/40 backdrop-blur-sm border border-mystical-800/30 hover:border-gold-400/50 transition-all duration-300 transform hover:scale-105"
+                  href={calendlyLinks[index]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
                 >
-                  <CardContent className="p-6">
-                    <div className="mb-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-mystical-500 to-mystical-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Icon className="w-8 h-8 text-white" />
+                  <Card
+                    className="bg-cosmic-900/40 backdrop-blur-sm border border-mystical-800/30 hover:border-gold-400/50 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <CardContent className="p-6">
+                      <div className="mb-4">
+                        <div className="w-16 h-16 bg-gradient-to-br from-mystical-500 to-mystical-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Icon className="w-8 h-8 text-white" />
+                        </div>
+                        <h3 className="text-xl font-cinzel font-semibold text-cosmic-50 mb-2">
+                          {session.title}
+                        </h3>
+                        <p className="text-cosmic-200 text-sm mb-4">
+                          {session.description}
+                        </p>
                       </div>
-                      <h3 className="text-xl font-cinzel font-semibold text-cosmic-50 mb-2">
-                        {session.title}
-                      </h3>
-                      <p className="text-cosmic-200 text-sm mb-4">
-                        {session.description}
-                      </p>
-                    </div>
-                    <div className="text-gold-400 font-bold text-lg">
-                      {session.price}
-                    </div>
-                  </CardContent>
-                </Card>
+                      <div className="text-gold-400 font-bold text-lg">
+                        {session.price}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
               );
             })}
           </div>
