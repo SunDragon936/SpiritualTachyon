@@ -44,9 +44,13 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <span key={item.name} className="text-yellow-400 px-3 py-2 text-sm font-medium">
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-yellow-400 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                >
                   {item.name}
-                </span>
+                </a>
               ))}
             </div>
           </div>
