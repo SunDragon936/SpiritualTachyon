@@ -281,24 +281,37 @@ export default function TachyonInfo() {
                 <span className="text-gold-400 mr-3">✧</span>
                 What to Expect in a Session
               </h2>
-              <ul className="text-white space-y-3 mb-6">
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  Sessions last 30 minutes.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  You will lie fully clothed in the chamber; light-colored clothing is recommended.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  You may meditate, rest, or even nap while receiving tachyon energy.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-400 mr-2">•</span>
-                  The experience is gentle, non-invasive, and accumulates over multiple sessions.
-                </li>
-              </ul>
+              
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
+                  <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Session Details:</h3>
+                  <ul className="text-white space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      Sessions last 30 minutes.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      You will lie fully clothed in the chamber; light-colored clothing is recommended.
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-400/20">
+                  <h3 className="text-lg font-cinzel font-bold mb-4 text-[#ffffff]">Experience:</h3>
+                  <ul className="text-white space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      You may meditate, rest, or even nap while receiving tachyon energy.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-gold-400 mr-2">•</span>
+                      The experience is gentle, non-invasive, and accumulates over multiple sessions.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
               <p className="text-white leading-relaxed mb-6">
                 The Tachyon Chamber interacts with your unique energy matrix, where you are at in the exact now moment of your session, what is priority for you, and what you are willing and able to receive. Your awareness level of what you are receiving will depend on the brain wave state that you are able to get yourself to during your session.
               </p>
