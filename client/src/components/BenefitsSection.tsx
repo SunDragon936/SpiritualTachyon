@@ -1,6 +1,5 @@
 import { Zap, CheckCircle, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import earthBgPath from "@assets/Earth Perspective Image Background_1752448832103.jpg";
 
 const BenefitsSection = () => {
@@ -20,22 +19,19 @@ const BenefitsSection = () => {
       title: "Single Session",
       description: "Experience the power of quantum healing in a focused 30-minute session.",
       price: "$111",
-      icon: Zap,
-      link: "https://calendly.com/stargatehealing/1-hour-appointment?back=1&month=2025-07"
+      icon: Zap
     },
     {
       title: "Package of 3",
       description: "Deepen your transformation with a series of three healing sessions.",
       price: "$222",
-      icon: CheckCircle,
-      link: "https://calendly.com/stargatehealing/30-min-tachyon-session-1-hour-total-appointme-clone-2?back=1&month=2025-07"
+      icon: CheckCircle
     },
     {
       title: "Package of 6",
       description: "Deep transformation journey with comprehensive healing sessions. Includes a free cintamani stone.",
       price: "$444",
-      icon: Sparkles,
-      link: "https://calendly.com/stargatehealing/package-of-3-30-minute-sessions-74-each-clone-1?back=1&month=2025-07"
+      icon: Sparkles
     }
   ];
 
@@ -118,17 +114,9 @@ const BenefitsSection = () => {
                         {session.description}
                       </p>
                     </div>
-                    <div className="text-gold-400 font-bold text-lg mb-4">
+                    <div className="text-gold-400 font-bold text-lg">
                       {session.price}
                     </div>
-                    <Button
-                      className="bg-gradient-to-r from-mystical-600 to-mystical-700 hover:from-mystical-500 hover:to-mystical-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full"
-                      asChild
-                    >
-                      <a href={session.link} target="_blank" rel="noopener noreferrer">
-                        Book Now
-                      </a>
-                    </Button>
                   </CardContent>
                 </Card>
               );
