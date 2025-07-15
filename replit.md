@@ -100,10 +100,12 @@ The application follows a full-stack architecture with clear separation between 
 
 ## Recent Changes
 - **Tachyon Info Page**: Created comprehensive information page with detailed content about tachyon healing
-- **Navigation**: Added routing for `/tachyon-info` page with proper navigation
+- **Navigation**: Added routing for `/tachyon-info` page with proper navigation links in header and footer
 - **Hero Section**: Linked "Learn More" button to new Tachyon Info page
-- **Calendly Integration**: Embedded booking link in "Book Your Session" button
-- **Parallax Background**: Implemented fixed background parallax effect using crystals image with galactic crystalline 5D styling
-- **Content Styling**: Updated all content sections with translucent backgrounds that work with the fixed parallax background
+- **Calendly Integration**: Embedded specific booking links in session cards and main CTA buttons
+- **Parallax Background**: Implemented fixed background parallax effects on Tachyon Info page and footer
+- **Content Styling**: Updated all content sections with translucent backgrounds that work with fixed parallax backgrounds
+- **Pricing Structure**: Updated session pricing to $111, $222, $444 with special cintamani stone offer for Package of 6
+- **Session Cards**: Made all session cards clickable with direct Calendly booking links
 
 The application is designed to be easily extensible, with clear separation of concerns and modern development practices. The cosmic/mystical theme is consistently applied throughout the UI with custom color schemes and typography choices.
