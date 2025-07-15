@@ -11,23 +11,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative border-t border-mystical-800/30 py-12">
-      {/* Fixed parallax background */}
-      <div 
-        className="fixed inset-0 z-0"
-        style={{
-          backgroundImage: `url(${quantumNodesBgPath})`,
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 0%',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-        }}
-      />
+    <footer 
+      className="relative border-t border-mystical-800/30 py-12"
+      style={{
+        backgroundImage: `url(${quantumNodesBgPath})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 0%',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-cosmic-950/80"></div>
       
-      {/* Fixed overlay for text readability */}
-      <div className="absolute inset-0 bg-cosmic-950/80 z-10"></div>
-      
-      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-cinzel font-bold text-teal-400 mb-4">
             STARGATE HEALING
